@@ -71,6 +71,30 @@ svg:not(:root){
 	overflow: hidden;
 }
 
+/*==============================================
+
+	Colors
+
+===============================================*/
+
+html {
+
+	/* primary colors */
+	--color-sunset:#f2b706;
+	--color-bridge:#da6e00;
+	--color-river:#4087aa;
+
+	/* light colors */
+	--color-sunset-light:#ffe94e;
+	--color-bridge-light:#ff9e3e;
+	--color-river-light:#74b7de;
+
+	/* dark colors */
+	--color-sunset-dark:#ba8800;
+	--color-bridge-dark:#a24100;
+	--color-river-dark:#005a7b;
+
+}
 
 
 /*==============================================
@@ -80,37 +104,54 @@ svg:not(:root){
 ===============================================*/
 
 html {
-	color: #da6e00;
+	color: var(--color-bridge);
+
+	/* fonts  */
+	--font-primary:'Open Sans', Helvetica, sans-serif;
+	--font-display:'Abril Fatface', Helvetica, cursive;
+
+	line-height: 1.5;
 }
 
 body {
+	font-family: var(--font-primary);
+	margin: auto;
 	text-align: center;
+	
+	
 }
 
 h1, h2, h3, h4, h5, h6 {
-
+	font-family: var(--font-display);
 }
 
-a {
-	color: #f2b706;
-	
+main {
+	margin: auto;
+	max-width: 40rem;
+	text-align: center;
 }
 
-a:visited {
-	
-}
-
-a:hover {
+ main a {
 	
 	
 }
 
-a:focus {
+main a:visited {
+	color: var(--color-sunset-dark);
 	
 }
 
-a:active {
+main a:hover {
+	color: var(--color-sunset-light);
 	
+}
+
+main a:focus {
+	background: var(--color-river-light);
+}
+
+main a:active {
+	color: var(--color-bridge-dark)
 }
 
 
@@ -121,7 +162,7 @@ a:active {
 =================================================*/
 
 .site-header {
-	background-color: #4087aa;
+	background-color: var(--color-river);
 	padding: 2rem;
 }
 
@@ -130,13 +171,77 @@ a:active {
 }
 
 .site-navigation ul {
-	margin-left: 0;
+	padding-left: 0;
 }
 
 .logo {
+	color: var(--color-sunset-light);
+	font-family: var(--font-display);
 	font-size: 3rem;
 	text-decoration: none;
 }
+
+
+nav a {
+	color: var(--color-sunset);
+	
+}
+
+nav a:visited {
+	color: var(--color-sunset-dark);
+	
+}
+
+nav a:hover {
+	color: var(--color-sunset-light);
+	
+}
+
+nav a:focus {
+
+	
+}
+
+nav a:active {
+	color: var(--color-bridge-dark)
+}
+
+
+/*===============================================
+
+	Main Component
+
+=================================================*/
+
+.identity {
+	list-style: none;
+	
+}
+
+/*=============================================
+
+	Examples
+
+==============================================*/
+
+.display-font {
+		font-family: var(--font-display);
+}
+
+.primary-font {
+	font-family: var(--font-primary);
+}
+
+.display {
+	font-family: Arial;
+}
+
+.primary {
+	font-family: Arial;
+}
+
+
+
 /*=============================================
 
 	Footer Component
@@ -144,7 +249,7 @@ a:active {
 ==============================================*/
 
 .site-footer {
-	background-color: #4087aa;
+	background-color: var(--color-river);
 	padding: 2rem;
 }
 
@@ -153,11 +258,11 @@ a:active {
 }
 
 .site-footer ul {
-	margin-left: 0;
+	padding-left: 0;
 }
 
 .site-footer p {
-	color: #f2b706;
+	color: var(--color-sunset);
 }
 
 
