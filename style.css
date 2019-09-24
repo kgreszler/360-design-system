@@ -110,13 +110,24 @@ html {
 	--font-primary:'Open Sans', Helvetica, sans-serif;
 	--font-display:'Abril Fatface', Helvetica, cursive;
 
-	line-height: 1.5;
+	line-height: 1.4;
+
+	--size-ratio: 1.1;
+	--size-primary: calc( 1rem * var(--size-ratio) );
+	--size-plus-one: calc( var(--size-primary) * var(--size-ratio) );
+	--size-plus-two: calc( var(--size-plus-one) * var(--size-ratio) );
+	--size-plus-three: calc( var(--size-plus-two) * var(--size-ratio) );
+	--size-plus-four: calc( var(--size-plus-three) * var(--size-ratio) );
+	--size-plus-five: calc( var(--size-plus-four) * var(--size-ratio) );
+	--size-plus-six: calc( var(--size-plus-five) * var(--size-ratio) );
+	--size-minus-one: calc( var(--size-primary) / var(--size-ratio) );
+
 }
 
 body {
 	font-family: var(--font-primary);
+	font-size: var(--size-primary);
 	margin: auto;
-	text-align: center;
 	
 	
 }
@@ -125,10 +136,77 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: var(--font-display);
 }
 
+h1 {
+	color: var(--color-bridge-dark);
+	font-size: var(--size-plus-six);
+	letter-spacing: .2em;
+	text-decoration: underline;
+}
+
+h2 {
+	color: var(--color-bridge-light);
+	font-size: var(--size-plus-five);
+	letter-spacing: .1em;
+	text-decoration: underline;
+
+}
+
+h3 {
+	font-size: var(--size-plus-four);
+	text-decoration: underline;
+}
+
+h4 {
+	color: var(--color-bridge-dark);
+	font-size: var(--size-plus-three);
+	text-decoration: underline;
+}
+
+h5 {
+	color: var(--color-bridge-light);
+	font-size: var(--size-plus-two);
+	text-decoration: underline;
+}
+
+h6 {
+	font-size: var(--size-plus-one);
+	text-decoration: underline;
+}
+
+.heading-examples {
+	text-decoration: none;
+
+}
+
+.featured-text {
+	color:#c0c0c0 ;
+	font-size: var(--size-plus-one);
+	margin: 2rem 0 2rem;
+}
+
+.body-text {
+	font-size: var(--size-primary);
+	margin: 2rem 0 2rem;
+}
+
+.tertiary-text {
+	color: #dcdcdc;
+	font-size: var(--size-minus-one);
+	margin: 2rem 0 2rem;
+}
+
+blockquote {
+	color: #74b7de; 
+}
+
+cite {
+	color: #005a7b;
+}
+
 main {
 	margin: auto;
 	max-width: 40rem;
-	text-align: center;
+	
 }
 
  main a {
