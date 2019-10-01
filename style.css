@@ -205,6 +205,7 @@ cite {
 
 main {
 	margin: auto;
+	margin-bottom: 70px;
 	max-width: 40rem;
 	
 }
@@ -215,7 +216,7 @@ main {
 }
 
 main a:visited {
-	color: var(--color-sunset-dark);
+	
 	
 }
 
@@ -318,7 +319,98 @@ nav a:active {
 	font-family: Arial;
 }
 
+.hero-button {
+	background-color: var(--color-river-light);
+	border: 2px solid;
+	border-radius: .5rem;
+	color: var(--color-sunset-light);
+	padding: .5rem;
+	text-decoration: none;
 
+}
+
+.hero-button:hover {
+	background-color: var(--color-river-dark);
+
+}
+
+.hero-button:focus {
+	background-color: var(--color-bridge);
+	outline: none;
+
+}
+
+.hero-button:active {
+	color: var(--color-bridge-light);
+
+}
+
+
+.normal-button {
+	background-color: var(--color-river-dark);
+	border: 2px solid;
+	border-radius: .5rem;
+	color: var(--color-sunset);
+	padding: .5rem;
+	text-decoration: none;
+
+}
+
+.normal-button:hover {
+	background-color: var(--color-sunset);
+	color: var(--color-river-dark);
+}
+
+.normal-button:focus {
+	background-color: var(--color-sunset-dark);
+	outline: none;
+
+}
+
+.normal-button:active {
+	color: var(--color-sunset);
+}
+
+.tertiary-button {
+	background-color: white;
+	border: 2px solid;
+	border-radius: .5rem;
+	color: var(--color-sunset);
+	padding: .5rem;
+	text-decoration: none;
+}
+
+.tertiary-button:hover {
+	color: var(--color-dark-sunset);
+}
+
+.tertiary-button:focus {
+	color: var(--color-river-dark);
+	outline: none;
+}
+
+.tertiary-button:active {
+	background-color: var(--color-bridge);
+}
+
+
+details {
+	background-color: var(--color-river);
+	border-radius: 2.5rem;
+	color: var(--color-sunset);
+	margin: 2rem 0;
+	overflow: hidden;
+}
+
+summary {
+	background-color: var(--color-river-dark);
+	border-bottom: 4px solid lightblue;
+	padding: 1rem;
+}
+
+details div {
+	padding: 2rem;
+}
 
 /*=============================================
 
@@ -340,7 +432,7 @@ nav a:active {
 }
 
 .site-footer p {
-	color: var(--color-sunset);
+	color: var(--color-bridge);
 }
 
 
