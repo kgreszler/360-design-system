@@ -105,6 +105,9 @@ html {
 
 html {
 	color: var(--color-bridge);
+	font-family: var(--font-primary);
+	font-size: var(--size-primary);
+	margin: auto;
 
 	/* fonts  */
 	--font-primary:'Open Sans', Helvetica, sans-serif;
@@ -125,9 +128,6 @@ html {
 }
 
 body {
-	font-family: var(--font-primary);
-	font-size: var(--size-primary);
-	margin: auto;
 	
 	
 }
@@ -173,10 +173,7 @@ h6 {
 	text-decoration: underline;
 }
 
-.heading-examples {
-	text-decoration: none;
 
-}
 
 .featured-text {
 	color:#c0c0c0 ;
@@ -184,10 +181,6 @@ h6 {
 	margin: 2rem 0 2rem;
 }
 
-.body-text {
-	font-size: var(--size-primary);
-	margin: 2rem 0 2rem;
-}
 
 .tertiary-text {
 	color: #dcdcdc;
@@ -203,35 +196,6 @@ cite {
 	color: #005a7b;
 }
 
-main {
-	margin: auto;
-	margin-bottom: 70px;
-	max-width: 40rem;
-	
-}
-
- main a {
-	
-	
-}
-
-main a:visited {
-	
-	
-}
-
-main a:hover {
-	color: var(--color-sunset-light);
-	
-}
-
-main a:focus {
-	background: var(--color-river-light);
-}
-
-main a:active {
-	color: var(--color-bridge-dark)
-}
 
 
 /*===============================================
@@ -241,7 +205,7 @@ main a:active {
 =================================================*/
 
 .site-header {
-	background-color: var(--color-river);
+	background-color: var(--color-river-light);
 	padding: 2rem;
 }
 
@@ -276,11 +240,6 @@ nav a:hover {
 	
 }
 
-nav a:focus {
-
-	
-}
-
 nav a:active {
 	color: var(--color-bridge-dark)
 }
@@ -297,11 +256,35 @@ nav a:active {
 	
 }
 
+main {
+	margin: auto;
+	margin-bottom: 70px;
+	max-width: 40rem;
+	
+}
+
+main a:hover {
+	color: var(--color-sunset-light);
+	
+}
+
+main a:focus {
+	background: var(--color-river-light);
+}
+
+main a:active {
+	color: var(--color-bridge-dark)
+}
+
 /*=============================================
 
 	Examples
 
 ==============================================*/
+
+.heading-examples {
+	text-decoration: none;
+}
 
 .display-font {
 		font-family: var(--font-display);
@@ -393,6 +376,10 @@ nav a:active {
 	background-color: var(--color-bridge);
 }
 
+.modal-buttons {
+	padding-left: 12rem;
+	padding-top: 2rem;
+}
 
 details {
 	background-color: var(--color-river);
@@ -412,6 +399,35 @@ details div {
 	padding: 2rem;
 }
 
+dialog {
+	border: none;
+	border-bottom: 10px solid var(--color-bridge-dark);
+	border-top: 10px solid var(--color-bridge-dark);
+	border-radius: 2rem;
+	box-shadow: 7px 7px 7px rgba( 0, 0, 0, .5 );
+	margin: 2rem;
+	padding: 1rem;
+}
+
+dialog[open] {
+	animation: fade-in .2s;
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: .5;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+
 /*=============================================
 
 	Footer Component
@@ -419,7 +435,7 @@ details div {
 ==============================================*/
 
 .site-footer {
-	background-color: var(--color-river);
+	background-color: var(--color-river-light);
 	padding: 2rem;
 }
 
