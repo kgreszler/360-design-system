@@ -278,29 +278,9 @@ main a:active {
 
 /*=============================================
 
-	Examples
+	Buttons
 
 ==============================================*/
-
-.heading-examples {
-	text-decoration: none;
-}
-
-.display-font {
-		font-family: var(--font-display);
-}
-
-.primary-font {
-	font-family: var(--font-primary);
-}
-
-.display {
-	font-family: Arial;
-}
-
-.primary {
-	font-family: Arial;
-}
 
 .hero-button {
 	background-color: var(--color-river-light);
@@ -364,7 +344,7 @@ main a:active {
 }
 
 .tertiary-button:hover {
-	color: var(--color-dark-sunset);
+	color: var(--color-sunset-dark);
 }
 
 .tertiary-button:focus {
@@ -379,6 +359,154 @@ main a:active {
 .modal-buttons {
 	padding-left: 12rem;
 	padding-top: 2rem;
+}
+
+.submit-button {
+	background-color: var(--color-river-light);
+	border: 2px solid;
+	border-radius: .5rem;
+	color: var(--color-sunset-light);
+	padding: .5rem;
+	text-decoration: none;
+}
+
+.submit-button-hover {
+	background-color: var(--color-river-dark);
+	border: 2px solid;
+	border-radius: .5rem;
+	color: var(--color-sunset-light);
+	padding: .5rem;
+	text-decoration: none;
+}
+
+.submit-button-active {
+	background-color: var(--color-bridge-dark);
+	color: var(--color-bridge);
+	border: 2px solid var(--color-bridge);
+	border-radius: .5rem;
+	color: var(--color-sunset-light);
+	padding: .5rem;
+	text-decoration: none;
+}
+
+.submit-button-focus {
+	background-color: var(--color-bridge);
+	border: 2px solid;
+	border-radius: .5rem;
+	color: var(--color-sunset-light);
+	outline: none;
+	padding: .5rem;
+	text-decoration: none;
+}
+
+button {
+	background-color: var(--color-river-light);
+	border: 2px solid;
+	border-radius: .5rem;
+	color: var(--color-sunset-light);
+	padding: .5rem;
+	text-decoration: none;
+}
+
+.hover-button {
+	background-color: var(--color-river-dark);
+	border: 2px solid;
+	border-radius: .5rem;
+	color: var(--color-sunset-light);
+	padding: .5rem;
+	text-decoration: none;
+}
+
+.active-button {
+	background-color: var(--color-bridge-dark);
+	color: var(--color-bridge);
+	border: 2px solid var(--color-bridge);
+	border-radius: .5rem;
+	color: var(--color-sunset-light);
+	padding: .5rem;
+	text-decoration: none;
+}
+
+.focus-button {
+	background-color: var(--color-bridge);
+	border: 2px solid;
+	border-radius: .5rem;
+	color: var(--color-sunset-light);
+	outline: none;
+	padding: .5rem;
+	text-decoration: none;
+}
+/*=============================================
+
+	Form Inputs
+
+==============================================*/
+
+input, select, textarea {
+	border: 2px solid;
+	border-radius: .5rem;
+	box-sizing: border-box;
+	display: block;
+	margin-top: .5rem;
+	min-width: 50%;
+	padding: .5rem;
+	-webkit-appearance:none;
+}
+
+textarea {
+	min-height: 4rem;
+}
+
+.help-text {
+	color:#dcdcdc;
+}
+
+input[disabled] {
+	opacity: .5;
+}
+
+textarea[disabled] {
+	opacity: .5;
+}
+
+.focus {
+	border: solid var(--color-sunset-dark);
+}
+
+.error {
+	border: solid red;
+}
+
+.error-message {
+	color: red;
+}
+
+
+
+/*=============================================
+
+	Examples
+
+==============================================*/
+
+.heading-examples {
+	text-decoration: none;
+}
+
+.display-font {
+		font-family: var(--font-display);
+}
+
+.primary-font {
+	font-family: var(--font-primary);
+}
+
+.display {
+	font-family: Arial;
+}
+
+.primary {
+	font-family: Arial;
 }
 
 details {
@@ -416,10 +544,6 @@ dialog[open] {
 @keyframes fade-in {
 	0% {
 		opacity: 0;
-	}
-
-	50% {
-		opacity: .5;
 	}
 
 	100% {
