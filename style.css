@@ -103,6 +103,10 @@ html {
 
 ===============================================*/
 
+
+
+
+
 html {
 	color: var(--color-bridge);
 	font-family: var(--font-primary);
@@ -127,9 +131,19 @@ html {
 
 }
 
-body {
-	
-	
+
+@media ( min-width: 640px ) {
+	html {
+		font-size: 20px;
+		line-height: 1.2;
+	}
+
+}
+
+@media ( min-width: 1140px ) {
+	html {
+		font-size: 25px;
+	}
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -174,7 +188,6 @@ h6 {
 }
 
 
-
 .featured-text {
 	color:#c0c0c0 ;
 	font-size: var(--size-plus-one);
@@ -210,7 +223,7 @@ cite {
 }
 
 .site-navigation li {
-	display: inline;
+	display: block;
 }
 
 .site-navigation ul {
@@ -241,9 +254,24 @@ nav a:hover {
 }
 
 nav a:active {
-	color: var(--color-bridge-dark)
+	color: var(--color-bridge-dark);
+}
+/*===============================================
+
+Page Nav Component
+
+=================================================*/
+
+.current-page {
+	color: var(--color-bridge-dark);
+	background-color: var(--color-sunset-light);
 }
 
+@media ( min-width: 640px ) {
+	.site-header li {
+		display: inline-block;
+	}
+}
 
 /*===============================================
 
