@@ -131,6 +131,10 @@ html {
 
 }
 
+body {
+	margin: 0;
+}
+
 
 @media ( min-width: 640px ) {
 	html {
@@ -238,6 +242,12 @@ cite {
 }
 
 
+
+/*===============================================
+
+Page Nav Component
+
+=================================================*/
 nav a {
 	color: var(--color-sunset);
 	
@@ -256,11 +266,6 @@ nav a:hover {
 nav a:active {
 	color: var(--color-bridge-dark);
 }
-/*===============================================
-
-Page Nav Component
-
-=================================================*/
 
 .current-page {
 	color: var(--color-bridge-dark);
@@ -268,7 +273,7 @@ Page Nav Component
 }
 
 @media ( min-width: 640px ) {
-	.site-header li {
+	.site-navigation li {
 		display: inline-block;
 	}
 }
@@ -464,6 +469,7 @@ button {
 	padding: .5rem;
 	text-decoration: none;
 }
+
 /*=============================================
 
 	Form Inputs
@@ -577,6 +583,63 @@ dialog[open] {
 	100% {
 		opacity: 1;
 	}
+}
+
+.error-notification {
+	border-color: red;
+	border-style: solid;
+	color: black;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+
+.warning {
+	border-color: yellow;
+	border-style: solid;
+	color: black;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.neutral {
+	border-color: lightblue;
+	border-style: solid;
+	color: black;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+
+.success {
+	border-color: green;
+	border-style: solid;
+	color: black;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+
+/*=============================================
+
+	Hero Block
+
+==============================================*/
+
+.hero {
+	align-items: center;
+	background-image: url(images/bridge.svg);
+	background-position: cover;
+	background-size: cover;
+	color: var(--color-sunset-light);
+	display: flex;
+	flex-direction: column;
+	min-height: 40vh;
+
 }
 
 
