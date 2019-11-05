@@ -642,7 +642,47 @@ dialog[open] {
 
 }
 
+/*=============================================
 
+	Cards
+
+==============================================*/
+
+.card {
+	border: 2px solid var(--color-bridge-dark);
+	border-radius: 3rem;
+	padding: 1rem;
+}
+
+.article-card {
+	align-items: center;
+	display: flex;
+}
+
+.profile-card {
+	border: 2px solid var(--color-bridge-dark);
+	border-radius: 3rem;
+	display: flex;
+	overflow: hidden;
+}
+
+.profile-info {
+	display: block;
+	padding-left: 1rem;
+}
+
+.action-card {
+	border: 2px solid var(--color-bridge-dark);
+	border-radius: 3rem;
+	display: flex;
+	overflow: hidden;
+	padding-left: 3rem;
+}
+
+.action-info {
+	display: block;
+
+}
 /*=============================================
 
 	Footer Component
