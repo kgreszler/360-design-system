@@ -676,6 +676,7 @@ dialog[open] {
 	border-radius: 3rem;
 	display: flex;
 	overflow: hidden;
+	padding-bottom: 1rem;
 	padding-left: 3rem;
 }
 
@@ -683,6 +684,34 @@ dialog[open] {
 	display: block;
 
 }
+
+.card-grid {
+	display: grid;
+	grid-gap: 1rem;
+}
+
+@media (min-width: 900px ) {
+
+	.card-grid {
+		background-color: var(--color-river-light);
+		grid-template-columns: repeat( 2, 1fr );
+
+	}
+
+	.featured-1 {
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+
+	.card-callouts {
+		display: grid;
+		grid-template-columns: repeat( 3, 1fr );
+
+	}
+}
+
+
+
 /*=============================================
 
 	Footer Component
