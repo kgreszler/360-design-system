@@ -586,6 +586,7 @@ dialog[open] {
 }
 
 .error-notification {
+	align-items:  center;
 	border-color: red;
 	border-style: solid;
 	color: black;
@@ -596,6 +597,7 @@ dialog[open] {
 
 
 .warning {
+	align-items: center;
 	border-color: yellow;
 	border-style: solid;
 	color: black;
@@ -605,6 +607,7 @@ dialog[open] {
 }
 
 .neutral {
+	align-items: center;
 	border-color: lightblue;
 	border-style: solid;
 	color: black;
@@ -615,6 +618,7 @@ dialog[open] {
 
 
 .success {
+	align-items: center;
 	border-color: green;
 	border-style: solid;
 	color: black;
@@ -651,6 +655,7 @@ dialog[open] {
 .card {
 	border: 2px solid var(--color-bridge-dark);
 	border-radius: 3rem;
+	display: block;
 	padding: 1rem;
 }
 
@@ -672,12 +677,14 @@ dialog[open] {
 }
 
 .action-card {
+	align-items: center;
 	border: 2px solid var(--color-bridge-dark);
 	border-radius: 3rem;
 	display: flex;
 	overflow: hidden;
 	padding-bottom: 1rem;
 	padding-left: 3rem;
+	padding-top: 1rem;
 }
 
 .action-info {
